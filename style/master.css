@@ -1,8 +1,10 @@
 body{
-  /*background: rgb(180,255,193);
-  background: linear-gradient(45deg, rgba(180,255,193,1) 4%, rgba(173,223,255,1) 92%);*/
-  background-color: #DDC5A2;
+  background: rgb(221,197,162);
+  background: linear-gradient(45deg, rgba(221,197,162,1) 18%, rgba(205,245,172,1) 78%);
+  background-size: 200% 200%;
+  /*background-color: #DDC5A2;*/
   font-family:  Open Sans;
+  animation: gradient 4s ease infinite;
 
 }
 body, html{
@@ -49,4 +51,16 @@ body, html{
 }
 a{
   text-decoration: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
